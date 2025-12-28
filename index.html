@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hello, world! — Braedyn</title>
+  <meta name="description" content="My first little corner of the web." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <h1>Hello, world!</h1>
+      <p class="subtitle">I made my first tiny corner of the web.</p>
+      <nav aria-label="Primary navigation">
+        <ul class="nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#favorites">Favorites</a></li>
+          <li><a href="#links">Links</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section id="about" class="card">
+      <h2>About me</h2>
+      <p>
+        Hi! I’m Braedyn. I like building things (coding, design, and random projects),
+        and this is my “hello world” website.
+      </p>
+
+      <figure class="profile">
+        <!-- Replace src with your image filename -->
+<img src="bobaimag.jpg" alt="A cup of boba tea" style="max-width: 320px;">
+        <figcaption>Current motivation: boba + building cool stuff.</figcaption>
+      </figure>
+
+
+     
+    </section>
+
+    <section id="favorites" class="card">
+      <h2>Favorites</h2>
+      <ul class="list">
+        <li><strong>Drink:</strong> brown sugar boba</li>
+        <li><strong>Project vibe:</strong> clean UI + useful tools</li>
+        <li><strong>Music for coding:</strong> anything with a steady beat</li>
+      </ul>
+
+     
+    </section>
+
+    <section id="links" class="card">
+      <h2>Links</h2>
+      <p>
+        Here are a couple places I hang out / learn:
+      </p>
+      <ol class="list">
+        <li><a href="https://www.w3schools.com/" target="_blank" rel="noreferrer">W3Schools</a></li>
+        <li><a href="https://www.freecodecamp.org/" target="_blank" rel="noreferrer">freeCodeCamp</a></li>
+      </ol>
+
+      <p class="small">
+        Built with HTML + CSS, and most importantly; vibes!!
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p> 2025 Braedyn, Thanks for visiting!!!</p>
+    </div>
+  </footer>
+
+  <script>
+    // tiny optional JS to fill in the year (doesn't affect "static site" requirement)
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

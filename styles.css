@@ -1,0 +1,137 @@
+/* Basic reset */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.6;
+  color: #0f172a;
+  background: #f8fafc;
+}
+
+/* Layout */
+.container {
+  width: min(900px, 92%);
+  margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+  background: linear-gradient(135deg, #0ea5e9, #22c55e);
+  color: white;
+  padding: 28px 0;
+}
+
+.subtitle {
+  margin-top: 6px;
+  opacity: 0.95;
+}
+
+/* Navigation */
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+.nav a:hover,
+.nav a:focus-visible {
+  outline: none;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+/* Skip link for accessibility */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 10px;
+  background: #111827;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+.skip-link:focus {
+  left: 12px;
+}
+
+/* Cards */
+.card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 18px;
+  margin: 18px 0;
+  box-shadow: 0 6px 16px rgba(2, 6, 23, 0.06);
+}
+
+.note {
+  background: #eef2ff;
+  border-left: 4px solid #6366f1;
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+
+/* Image styling */
+.profile {
+  margin: 14px 0;
+}
+
+.profile img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  display: block;
+}
+
+/* Lists */
+.list {
+  padding-left: 18px;
+}
+
+/* Badges */
+.badge-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.badge {
+  background: #e0f2fe;
+  border: 1px solid #bae6fd;
+  color: #075985;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+}
+
+/* Footer */
+.site-footer {
+  padding: 18px 0 30px;
+  color: #334155;
+}
+
+.small {
+  font-size: 0.95rem;
+  color: #475569;
+}
+
+/* Responsive touch */
+@media (max-width: 480px) {
+  .card { padding: 14px; }
+  .nav a { padding: 8px; }
+}
